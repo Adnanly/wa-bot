@@ -1,0 +1,94 @@
+# 🎮 LOBBY BOT CONFIGURATION
+
+## Bot Settings
+BOT_NAME=Lobby Bot
+PREFIX=.
+OWNER_NUMBERS=9942172892
+
+## Discord Webhooks (Get from Discord Server Settings > Integrations > Webhooks)
+# Main logger - All important events
+DISCORD_WEBHOOK_MAIN=https://discord.com/api/webhooks/1439693561221218547/KMulWms4LSWFG3Wc6UOu1Qp9_xJi5uqIR6nmLGW83j9-VcoF94L5x2PTsY6T3lAbnTcg
+
+# Message logger - Every message sent
+DISCORD_WEBHOOK_MESSAGES=https://discord.com/api/webhooks/1439693683602489425/PCsDJyVrvbmZ3vkBilMiXiqkg5rpkuRPQklGu5-SAuHROuGN6OKobbppm7VFLqGMVKDW
+
+# Group activity logger - Joins, leaves, group changes
+DISCORD_WEBHOOK_GROUPS=https://discord.com/api/webhooks/1439693791606083737/qFiaxHUfvPLh5M2s1WTxu4YHoCw8-0KS3XF1Y8R3X170kzd6mmaHFLCcSMxqtO-wq79l
+
+# Profile picture changes
+DISCORD_WEBHOOK_PFP=https://discord.com/api/webhooks/1439693906529747015/D9eSx-5eI24hXld4O969w9hloQ2FrQjsdOCOTGgcWkmSZzoUGXvpEjgyBsyetWZj6mL-
+
+# Status/Story logger
+DISCORD_WEBHOOK_STATUS=https://discord.com/api/webhooks/1439694002655068374/iXo8cZkysLGfPOzGhQv52KH-ZqWHkQm8x7W05WsEn1rMMEq2X-eDtbXRrtPnX5ww9Lr_
+
+# Command usage logger
+DISCORD_WEBHOOK_COMMANDS=https://discord.com/api/webhooks/1439694112147374252/0n2sqkC8FvBXTULm1x_wAQDj6OZSiPhZ6gAUItktCZO7jydvIkfpeE-ZjxcZxnuNI6ec
+
+# Error logger
+DISCORD_WEBHOOK_ERRORS=https://discord.com/api/webhooks/1439694235027767379/GpIJtlMAgVQTNL229R-3V_dgL5XYG0eZIQ6Vj9pt4BEQpdUPe2OF3AxmuN_1M-gyD-9E
+
+# Join/Leave specific logger
+DISCORD_WEBHOOK_JOIN_LEAVE=https://discord.com/api/webhooks/1439694323284443328/dhq5V1G2sp2Imf_oYTPj7W6JZ5g_kVsE17_J5o0zfKzpYLXAT7mItwhXxRlkpY5-unDV
+
+# Deleted messages logger (anti-delete)
+DISCORD_WEBHOOK_DELETED=https://discord.com/api/webhooks/1439694439982436354/2E8l3JjDdZfBNA2p8wVtNjZo9x1V7ZcOxXSJsXW-t86srKaQ7J5Cq-Vf9hWJp72GYTAp
+
+# System events logger
+DISCORD_WEBHOOK_SYSTEM=https://discord.com/api/webhooks/1439694534488494262/448KUGtsLYVjHXyAVSo36Ex4wFv6DpF4V7-z1JdsbGeOdodj9FKie9DwWqwtLKPz90j3
+
+## AI Configuration (Groq - FREE!)
+# Get free API key from: https://console.groq.com/keys
+GROQ_API_KEY=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
+
+## Database (Optional)
+MONGODB_URL=mongodb://localhost:27017/lobbybot
+
+---
+
+## 📝 HOW TO GET DISCORD WEBHOOKS:
+
+1. Open your Discord server
+2. Go to Server Settings > Integrations
+3. Click "Create Webhook"
+4. Choose a channel for logs
+5. Copy webhook URL
+6. Paste in .env file above
+
+### Recommended Setup:
+- **#bot-logs** channel → MAIN, SYSTEM
+- **#messages** channel → MESSAGES
+- **#groups** channel → GROUPS, JOIN_LEAVE
+- **#media** channel → PROFILE_PIC, STATUS
+- **#commands** channel → COMMANDS
+- **#errors** channel → ERRORS, DELETED
+
+---
+
+## 🤖 HOW TO GET GROQ API KEY (FREE):
+
+1. Go to: https://console.groq.com
+2. Sign up (FREE)
+3. Go to "API Keys"
+4. Click "Create API Key"
+5. Copy the key (starts with gsk_)
+6. Paste in GROQ_API_KEY above
+
+**Groq is 100% FREE with generous limits!**
+
+---
+
+## ⚡ Quick Start:
+
+```bash
+# 1. Copy this file to .env
+cp .env.example .env
+
+# 2. Edit .env and add your webhooks and API key
+nano .env
+
+# 3. Install dependencies
+npm install
+
+# 4. Start bot
+npm start
+```

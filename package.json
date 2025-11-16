@@ -1,0 +1,46 @@
+{
+  "name": "lobby-management-bot",
+  "version": "1.0.0",
+  "description": "Professional WhatsApp Lobby Bot with Auto-scheduling, AI Assistant, and Discord Logging",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "pm2": "pm2 start index.js --name lobby-bot",
+    "stop": "pm2 stop lobby-bot",
+    "restart": "pm2 restart lobby-bot",
+    "logs": "pm2 logs lobby-bot"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "lobby",
+    "gaming",
+    "discord",
+    "ai",
+    "automation"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "^6.7.0",
+    "axios": "^1.6.7",
+    "chalk": "^4.1.2",
+    "dotenv": "^16.4.1",
+    "figlet": "^1.7.0",
+    "fs-extra": "^11.2.0",
+    "lodash": "^4.17.21",
+    "moment-timezone": "^0.5.45",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^2.7.0",
+    "nodemon": "^3.0.3",
+    "pino": "^8.19.0",
+    "pm2": "^5.3.1",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
