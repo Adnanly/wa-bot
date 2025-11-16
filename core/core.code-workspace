@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"name": "core",
+			"path": "."
+		},
+		{
+			"name": "database",
+			"path": "../database"
+		},
+		{
+			"name": "lib",
+			"path": "../lib"
+		},
+		{
+			"name": "node_modules",
+			"path": "../node_modules"
+		},
+		{
+			"name": "plugins",
+			"path": "../plugins"
+		}
+	],
+	"settings": {}
+}
